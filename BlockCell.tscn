@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://textures/Puzzle_Tile_1x1_inch-_blue.png" type="Texture" id=1]
+[ext_resource path="res://BlockCell.gd" type="Script" id=2]
+
+[node name="BlockCell" type="TextureButton"]
+texture_normal = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
