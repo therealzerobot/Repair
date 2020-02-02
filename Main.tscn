@@ -1,8 +1,54 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -1.0
+margin_top = 4.0
+margin_right = -1.0
+margin_bottom = 4.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="ColorRect" parent="."]
+margin_top = -3.0
+margin_right = 800.0
+margin_bottom = 597.0
+color = Color( 0.243137, 0.380392, 0.533333, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tag Field" type="ColorRect" parent="."]
+margin_left = 425.0
+margin_top = 361.0
+margin_right = 782.0
+margin_bottom = 583.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Tag Field"]
+margin_left = 21.0
+margin_top = 16.0
+margin_right = 342.0
+margin_bottom = 206.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "OCP, egyptian, christian, monastic, baby food, bitches out, Murphy Brown, Showgirls, euthanasia, ED-209, Hasslehoss, Airwolf, AI, cop rock, King David, ascetic"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Folder Area" type="ColorRect" parent="."]
+margin_left = 403.0
+margin_top = 208.0
+margin_right = 798.0
+margin_bottom = 352.0
+color = Color( 1, 1, 1, 0.243137 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

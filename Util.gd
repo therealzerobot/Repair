@@ -1,6 +1,12 @@
 extends Node
 
-onready var Block = preload("res://Block.tscn");
+var Block = preload("res://Block.tscn");
+var FolderIcon = preload("res://File UI Element .tscn")
+
+func build_FolderIcon(text):
+	var icon = FolderIcon.instance()
+	icon.init (text)
+	return icon
 
 func build_block(cells,w,h):
 	var b = Block.instance();
